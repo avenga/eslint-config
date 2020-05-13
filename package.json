@@ -19,7 +19,9 @@
     "linting",
     "linter",
     "backend",
-    "frontend"
+    "frontend",
+    "eslint",
+    "eslintconfig"
   ],
   "author": "Avenga",
   "license": "MIT",
