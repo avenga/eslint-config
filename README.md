@@ -6,7 +6,7 @@ eslint configs from avenga for various languages
    https://eslint.org/docs/user-guide/getting-started  
 
 2. install this package:  
-   npm: `npm i --dev @avenga/eslint-config`  
+   npm: `npm i --save-dev @avenga/eslint-config`  
    yarn: `yarn add --dev @avenga/eslint-config`  
    
 3. extend the config which you want to use  
@@ -19,6 +19,5 @@ eslint configs from avenga for various languages
 4. Next steps:
    * configure additional settings such as `browser: true` or `node: true`
    * contribute additional configs for react or angular apps for example
-
 
 
