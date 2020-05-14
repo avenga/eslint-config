@@ -1,23 +1,25 @@
 # eslint-config
-eslint configs from avenga for various languages
+
+ESLint configs from Avenga for various languages
 
 ## install and use
-1. install eslint as per default:  
-   https://eslint.org/docs/user-guide/getting-started  
 
-2. install this package:  
+1. Install ESLint as per default:  
+   <https://eslint.org/docs/user-guide/getting-started>
+
+2. Install this package:  
    npm: `npm i --save-dev @avenga/eslint-config`  
-   yarn: `yarn add --dev @avenga/eslint-config`  
+   yarn: `yarn add --dev @avenga/eslint-config`
+
+3. Install peer dependencies
+
+4. Extend the config which you want to use  
+   * JavaScript + TypeScript: `"extends": "@avenga/eslint-config"`
+   * JavaScript only: `"extends": "@avenga/eslint-config/javascript"`
+   * TypeScript only: `"extends": "@avenga/eslint-config/typescript"`
    
-3. extend the config which you want to use  
-   * javascript + typescript: `"extends": "@avenga/eslint-config"`  
-   * javascript only: `"extends": "@avenga/eslint-config/javascript"`  
-   * typescript only: `"extends": "@avenga/eslint-config/typescript"`  
-   
-   Note: this already includes `eslint/recommended`  
+   Note: These already include recommended linting rules for both JS and TS, such as `eslint/recommended` and `@typescript-eslint/recommended`.
 
-4. Next steps:
-   * configure additional settings such as `browser: true` or `node: true`
-   * contribute additional configs for react or angular apps for example
-
-
+5. Next steps:
+   * Configure additional settings such as `browser: true` or `node: true`
+   * Contribute additional configs, for example for React or Angular apps
