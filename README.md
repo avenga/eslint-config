@@ -12,6 +12,9 @@ ESLint configs from Avenga for various languages
    yarn: `yarn add --dev @avenga/eslint-config`
 
 3. Install peer dependencies
+   Module requires a peer dependencies but none is installed. You must install peer dependencies yourself.
+   npm: `npm i --save-dev @typescript-eslint/eslint-plugin@~2.28.0 @typescript-eslint/parser@~2.28.0 eslint-plugin-import@~2.20.2 eslint-plugin-prefer-arrow@~1.2.1`
+   yarn: `yarn add --dev @typescript-eslint/eslint-plugin@~2.28.0 @typescript-eslint/parser@~2.28.0 eslint-plugin-import@~2.20.2 eslint-plugin-prefer-arrow@~1.2.1`
 
 4. Extend the config which you want to use  
    * JavaScript + TypeScript: `"extends": "@avenga/eslint-config"`
