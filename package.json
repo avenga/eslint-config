@@ -29,13 +29,13 @@
     "url": "https://github.com/avenga/eslint-config/issues"
   },
   "homepage": "https://github.com/avenga/eslint-config#readme",
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "~2.28.0",
-    "@typescript-eslint/parser": "~2.28.0",
-    "eslint": ">=6.8",
-    "eslint-plugin-import": "~2.20.2",
-    "eslint-plugin-prefer-arrow": "~1.2.1"
+  "dependencies": {
+    "eslint-plugin-import": "~2.29.1",
+    "eslint-plugin-prefer-arrow": "~1.2.3",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "peerDependencies": {
+    "eslint": "^7.0.0 || ^8.0.0"
+  }
 }
