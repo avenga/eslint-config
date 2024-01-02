@@ -4,9 +4,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -61,12 +60,10 @@ module.exports = {
     'prefer-rest-params': ['warn'],
     'prefer-spread': ['error'],
     '@typescript-eslint/adjacent-overload-signatures': ['error'],
-    '@typescript-eslint/ban-ts-ignore': ['warn'],
+    '@typescript-eslint/ban-ts-comment': ['warn'],
     '@typescript-eslint/ban-types': ['error'],
-    '@typescript-eslint/camelcase': ['warn'],
-    '@typescript-eslint/class-name-casing': ['off', {allowUnderscorePrefix: true}],
+    '@typescript-eslint/naming-convention': ['warn'],
     '@typescript-eslint/consistent-type-assertions': ['error'],
-    '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/member-delimiter-style': [
       'error',
       {
@@ -142,7 +139,6 @@ module.exports = {
     '@typescript-eslint/explicit-member-accessibility': ['off', {accessibility: 'explicit'}],
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/member-ordering': 'off',
-    '@typescript-eslint/no-parameter-properties': 'off',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/quotes': ['error', 'single',{avoidEscape: true, allowTemplateLiterals: true}],
@@ -162,7 +158,7 @@ module.exports = {
     'max-len': ['warn', {code: 120}],
     'no-caller': 'error',
     'no-console': 'off',
-    'no-duplicate-imports': 'error',
+    'import/no-duplicates': 'error',
     'no-extra-bind': 'error',
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
